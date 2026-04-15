@@ -14,7 +14,7 @@ const projects = [
     desc:'a community-based loyalty and rewards mobile app designed for local businesses and their customers.',
     client:'Digital Tech PH', duration:'5 Weeks',
     tags:['Mobile','Cross-Platform','Firebase'],
-    img:'images/project-digital village.png',
+    img:'images/project-digital-village.png',
     color:'var(--lime)'
   },
   {
@@ -31,7 +31,7 @@ const projects = [
     desc:'an all-in-one HR management dashboard built for call center and sales team operations.',
     client:'Contact Center PH', duration:'4 Weeks',
     tags:['Dashboard','Automation','SaaS'],
-    img:'images/project-hr command tool.png',
+    img:'images/project-hr-command-tool.png',
     color:'var(--teal)'
   },
   {
@@ -39,7 +39,7 @@ const projects = [
     desc:'a Filipino-context ride-hailing mobile app designed specifically for tricycle (TODA) operators and passengers — a local alternative to Grab, built for the Philippine market.',
     client:'Toda Association', duration:'4 Weeks',
     tags:['Mobile App Design','UI/UX Design','Ride Hailing App','Filipino App'],
-    img:'images/project-toda express.png',
+    img:'images/project-toda-express.png',
     color:'var(--sky)'
   },
   {
