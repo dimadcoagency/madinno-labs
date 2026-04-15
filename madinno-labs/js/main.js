@@ -3,47 +3,51 @@ const projects = [
   {
     id:1, cat:'web', title:'GrabMedia — Video Downloader',
     desc:'A sleek video downloader web app supporting multiple social media platforms for digital creators. Download from YouTube, Facebook, Instagram, and TikTok — fast, safe, and watermark-free in up to 4K quality.',
-    client:'GrabMedia', duration:'2 Weeks', tech:'Web App, API Integration',
+    client:'GrabMedia', duration:'2 Weeks',
     tags:['Web App','Video','Downloader','Multi-Platform'],
     color:'var(--sky)',
-    img:'images/project-grabmedia.jpg',
+    img:'images/project-grabmedia.png',
     link:'https://grabmedia.app/'
   },
   {
-    id:2, cat:'app', title:'Fitness Tracking App',
-    desc:'Cross-platform mobile app for a local gym chain. Workout logging, progress charts, class booking, and push notifications — all in one sleek interface.',
-    client:'GymPro PH', duration:'5 Weeks', tech:'React Native, Firebase',
+    id:2, cat:'app', title:'Digital Village App Design',
+    desc:'a community-based loyalty and rewards mobile app designed for local businesses and their customers.',
+    client:'Digital Tech PH', duration:'5 Weeks',
     tags:['Mobile','Cross-Platform','Firebase'],
+    img:'images/project-digital village.png',
     color:'var(--lime)'
   },
   {
-    id:3, cat:'creative', title:'Business Class — SMM Design',
+    id:3, cat:'creative', title:'Business Class Philippines — SMM Design',
     desc:'Full social media management and content creation for Business-Class Philippines, a top-tier business travel agency. Designed branded carousel posts, hiring graphics, company culture visuals, and produced engaging reels that consistently hit thousands of views.',
-    client:'Business-Class', duration:'Ongoing', tech:'Photoshop, Premiere Pro, Canva',
+    client:'Business-Class PH', duration:'Ongoing',
     tags:['Social Media','Reels','Graphics','Branding'],
     color:'var(--gold)',
-    img:'images/project-businessclass.jpg',
-    link:'https://www.facebook.com/businessclassphilippines'
+    img:'images/project-businessclass.png',
+    
   },
   {
-    id:4, cat:'software', title:'Inventory Management System',
-    desc:'Custom internal tool for tracking stock, automating reorder alerts, and generating reports. Reduced manual work by 70%.',
-    client:'Retail Chain PH', duration:'4 Weeks', tech:'Next.js, PostgreSQL',
+    id:4, cat:'software', title:'HR Management System',
+    desc:'an all-in-one HR management dashboard built for call center and sales team operations.',
+    client:'Contact Center PH', duration:'4 Weeks',
     tags:['Dashboard','Automation','SaaS'],
+    img:'images/project-hr command tool.png',
     color:'var(--teal)'
   },
   {
-    id:5, cat:'web', title:'Restaurant Website & Ordering',
-    desc:'Beautiful restaurant website with online menu, table reservations, and food ordering system. Mobile-first design with instant loading.',
-    client:'Kusina Cebu', duration:'2 Weeks', tech:'HTML/CSS, Node.js',
-    tags:['Restaurant','Ordering','Responsive'],
+    id:5, cat:'app', title:'Toda Express Mobile App',
+    desc:'a Filipino-context ride-hailing mobile app designed specifically for tricycle (TODA) operators and passengers — a local alternative to Grab, built for the Philippine market.',
+    client:'Toda Association', duration:'4 Weeks',
+    tags:['Mobile App Design','UI/UX Design','Ride Hailing App','Filipino App'],
+    img:'images/project-toda express.png',
     color:'var(--sky)'
   },
   {
-    id:6, cat:'creative', title:'Social Media Campaign',
-    desc:'30-day content package including video reels, carousel graphics, story templates, and engagement strategy for a product launch.',
-    client:'Beauty Brand PH', duration:'Ongoing', tech:'Premiere Pro, Photoshop',
-    tags:['Video','Social Media','Campaign'],
+    id:6, cat:'web', title:'MyAsapflights Travel Web Design',
+    desc:'a clean, professional flight booking website designed for a Philippine-based travel agency — built to help travelers find and book cheap flights fast.',
+    client:'MyAsapflights Travel', duration:'3 weeks',
+    tags:['Web Design','Travel Website','API'],
+    img:'images/project-myasapflights.png',
     color:'var(--coral)'
   }
 ];

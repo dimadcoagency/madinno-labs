@@ -531,7 +531,7 @@ footer{
   .nav-hamburger{display:flex}
   section,.hero{padding:5rem 1.5rem}
   .hero{padding-top:7rem}
-  .hero-wordmark{font-size:clamp(1.8rem,9vw,2.8rem)}
+  .hero-wordmark{font-size:clamp(1.2rem,6.5vw,2.8rem);word-break:break-word}
   .hero-stats{flex-direction:column;gap:1.5rem}
   .about-grid{grid-template-columns:1fr;gap:2.5rem}
   .services-grid,.portfolio-grid,.process-grid{grid-template-columns:1fr}
