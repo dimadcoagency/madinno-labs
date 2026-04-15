@@ -23,7 +23,7 @@ const projects = [
     client:'Business-Class PH', duration:'Ongoing',
     tags:['Social Media','Reels','Graphics','Branding'],
     color:'var(--gold)',
-    img:'images/project-businessclass.png',
+    img:'images/project-business-class.png',
     
   },
   {
