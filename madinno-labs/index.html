@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MADINNO LABS — Making Dynamic Innovation</title>
+<meta name="description" content="MADINNO LABS is a Filipino-built digital agency combining creative design and modern software development. Websites, apps, custom software, video editing, and social media graphics.">
+<meta name="keywords" content="digital agency, web design, app development, software development, video editing, social media, Philippines, Cebu">
+<meta name="author" content="MADINNO LABS">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="MADINNO LABS — Making Dynamic Innovation">
+<meta property="og:description" content="Creative design meets modern software engineering. Websites, apps, custom software, and stunning visuals — built for businesses ready to grow.">
+<meta property="og:url" content="https://madinnolabs.com">
+<meta property="og:site_name" content="MADINNO LABS">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MADINNO LABS — Making Dynamic Innovation">
+<meta name="twitter:description" content="Creative design meets modern software engineering. Websites, apps, custom software, and stunning visuals.">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Stylesheet -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav class="nav" id="mainNav">
+  <a href="#" class="nav-logo" onclick="scrollToSection('hero')">
+    <svg viewBox="0 0 100 60" fill="none"><defs><linearGradient id="ng" x1="0" y1="0" x2="100" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FF7A45"/><stop offset="20%" stop-color="#FFD447"/><stop offset="45%" stop-color="#A6E064"/><stop offset="70%" stop-color="#2ED9C3"/><stop offset="100%" stop-color="#4DA6FF"/></linearGradient></defs><path d="M50,30 C38,8 8,8 8,30 C8,52 38,52 50,30 C62,8 92,8 92,30 C92,52 62,52 50,30" stroke="url(#ng)" stroke-width="7" stroke-linecap="round" fill="none"/></svg>
+    <div class="nav-logo-text">MADINNO<span>LABS</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about" onclick="scrollToSection('about')">About</a></li>
+    <li><a href="#services" onclick="scrollToSection('services')">Services</a></li>
+    <li><a href="#portfolio" onclick="scrollToSection('portfolio')">Portfolio</a></li>
+    <li><a href="#process" onclick="scrollToSection('process')">Process</a></li>
+    <li><a href="#values" onclick="scrollToSection('values')">Values</a></li>
+  </ul>
+  <div class="nav-cta-wrap">
+    <a href="#contact" class="nav-cta" onclick="scrollToSection('contact')">Get in Touch</a>
+  </div>
+  <button class="nav-hamburger" onclick="toggleMobile()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#services" onclick="closeMobile()">Services</a>
+  <a href="#portfolio" onclick="closeMobile()">Portfolio</a>
+  <a href="#process" onclick="closeMobile()">Process</a>
+  <a href="#values" onclick="closeMobile()">Values</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="hero-glow hero-glow-1"></div>
+  <div class="hero-glow hero-glow-2"></div>
+  <div class="hero-glow hero-glow-3"></div>
+
+  <!-- Infinity Logo -->
+  <div class="hero-infinity">
+    <svg viewBox="0 0 100 60" fill="none"><defs><linearGradient id="hg" x1="0" y1="0" x2="100" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FFD447"/><stop offset="35%" stop-color="#A6E064"/><stop offset="65%" stop-color="#2ED9C3"/><stop offset="100%" stop-color="#4DA6FF"/></linearGradient></defs><path d="M50,30 C38,8 8,8 8,30 C8,52 38,52 50,30 C62,8 92,8 92,30 C92,52 62,52 50,30" stroke="url(#hg)" stroke-width="7" stroke-linecap="round" fill="none"/></svg>
+  </div>
+
+  <!-- Wordmark -->
+  <h1 class="hero-wordmark">MADINNO<span>LABS</span></h1>
+
+  <!-- Tagline -->
+  <p class="hero-tagline">Making Dynamic Innovation</p>
+
+  <!-- CTA Buttons -->
+  <div class="hero-cta-row">
+    <a href="#services" class="btn-primary" onclick="scrollToSection('services')">
+      Explore Services
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+    <a href="#portfolio" class="btn-secondary" onclick="scrollToSection('portfolio')">View Our Work</a>
+  </div>
+
+  <!-- Stats -->
+  <div class="hero-stats">
+    <div class="stat"><h3>100%</h3><p>Filipino-Built, Globally Ready</p></div>
+    <div class="stat"><h3>2-in-1</h3><p>Creative + Software</p></div>
+    <div class="stat"><h3>∞</h3><p>Innovation Mindset</p></div>
+  </div>
+</section>
+
+<!-- ===== STATEMENT ===== -->
+<section class="statement">
+  <h2 class="statement-heading reveal">We Build Digital<br><span class="grad-line">That Delivers.</span></h2>
+  <p class="statement-caption reveal">MADINNO LABS is a Filipino-owned digital agency combining creative design and modern software development to solve real problems for businesses.</p>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="dark-bg" id="about">
+  <div class="section-label">About Us</div>
+  <h2 class="section-title reveal">Where Creativity<br>Meets Engineering</h2>
+
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>MADINNO LABS is a modern digital agency born from the intersection of creative design and rapid software development. We combine experience in video editing, graphic design, and social media management with cutting-edge vibe coding methodology to build web applications, mobile apps, and custom software — fast, lean, and purpose-built.</p>
+      <p>Our name blends <strong style="color:var(--coral)">MAD</strong> (Making A Dynamic) and <strong style="color:var(--teal)">INNO</strong> (Innovation) — and <strong style="color:var(--sky)">LABS</strong> represents our experimental, build-first approach. We don't just design pretty things. We engineer solutions that move businesses forward.</p>
+      <p>Whether you're a small business needing a professional web presence, a startup wanting a custom app, or a brand looking for compelling visuals — MADINNO LABS is your all-in-one digital partner.</p>
+    </div>
+    <div>
+      <div class="about-card reveal">
+        <h3>🎨 Creative Studio</h3>
+        <p>Professional video editing, social media graphics, brand identity design, and content creation that elevates your brand presence across every platform.</p>
+      </div>
+      <div class="about-card reveal">
+        <h3>⚡ Software Lab</h3>
+        <p>Modern web and mobile applications built with vibe coding — leveraging AI-assisted development to deliver production-grade software at startup speed.</p>
+      </div>
+      <div class="about-card reveal">
+        <h3>🚀 Problem Solvers</h3>
+        <p>We don't build for building's sake. Every tool we create solves a specific business problem — from automating workflows to reaching more customers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services">
+  <div class="section-label">What We Do</div>
+  <h2 class="section-title reveal">Full-Stack Digital Services</h2>
+  <p class="section-desc reveal">From pixel to production — we cover every stage of your digital journey.</p>
+
+  <div class="services-grid">
+    <div class="svc-card reveal">
+      <div class="svc-icon" style="background:rgba(77,166,255,0.1)">🌐</div>
+      <h3>Website Design & Development</h3>
+      <p>Modern, responsive websites built to convert. From landing pages to full business platforms — designed with purpose.</p>
+      <div class="svc-tags"><span class="svc-tag">Landing Pages</span><span class="svc-tag">Business Sites</span><span class="svc-tag">E-commerce</span><span class="svc-tag">Web Apps</span></div>
+    </div>
+    <div class="svc-card reveal">
+      <div class="svc-icon" style="background:rgba(166,224,100,0.1)">📱</div>
+      <h3>App Development</h3>
+      <p>Cross-platform mobile applications that solve real problems. Built with modern frameworks for rapid delivery.</p>
+      <div class="svc-tags"><span class="svc-tag">iOS</span><span class="svc-tag">Android</span><span class="svc-tag">Cross-Platform</span><span class="svc-tag">PWA</span></div>
+    </div>
+    <div class="svc-card reveal">
+      <div class="svc-icon" style="background:rgba(46,217,195,0.1)">⚙️</div>
+      <h3>Custom Software</h3>
+      <p>Bespoke solutions tailored to your workflow. Dashboards, automation tools, internal systems — engineered to eliminate friction.</p>
+      <div class="svc-tags"><span class="svc-tag">Dashboards</span><span class="svc-tag">Automation</span><span class="svc-tag">SaaS</span><span class="svc-tag">APIs</span></div>
+    </div>
+    <div class="svc-card reveal">
+      <div class="svc-icon" style="background:rgba(255,122,69,0.1)">🎬</div>
+      <h3>Video Editing</h3>
+      <p>Professional video production and editing for ads, social content, promos, and brand storytelling.</p>
+      <div class="svc-tags"><span class="svc-tag">Reels / Shorts</span><span class="svc-tag">Ad Creatives</span><span class="svc-tag">Promos</span><span class="svc-tag">Motion</span></div>
+    </div>
+    <div class="svc-card reveal">
+      <div class="svc-icon" style="background:rgba(255,212,71,0.1)">🎨</div>
+      <h3>Social Media Graphics</h3>
+      <p>Scroll-stopping visuals designed for engagement. Brand-consistent posts, stories, carousels, and campaigns.</p>
+      <div class="svc-tags"><span class="svc-tag">Posts</span><span class="svc-tag">Carousels</span><span class="svc-tag">Brand Kits</span><span class="svc-tag">Thumbnails</span></div>
+    </div>
+    <div class="svc-card reveal">
+      <div class="svc-icon" style="background:linear-gradient(135deg,rgba(255,122,69,0.1),rgba(46,217,195,0.1))">🧠</div>
+      <h3>AI-Powered Solutions</h3>
+      <p>Leveraging AI tools and vibe coding to build smarter, faster. We integrate AI capabilities into your workflows.</p>
+      <div class="svc-tags"><span class="svc-tag">AI Integration</span><span class="svc-tag">Vibe Coding</span><span class="svc-tag">Chatbots</span><span class="svc-tag">Automation</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BRANDS MARQUEE ===== -->
+<div class="brands-section">
+  <div class="brands-title">Brands We've Worked With</div>
+  <div class="brands-strip">
+        <div class="brands-track">
+      <!-- Set 1 -->
+      <span class="brand-logo brand-bold">Business Class</span>
+      <span class="brand-logo brand-regular">Bai</span>
+      <span class="brand-logo brand-bold">Payday Express</span>
+      <span class="brand-logo brand-regular">MyAsap Travels</span>
+      <span class="brand-logo brand-bold">GrabMedia</span>
+      <span class="brand-logo brand-regular">DimadCo</span>
+      <span class="brand-logo brand-bold">EYSER™</span>
+      <span class="brand-logo brand-regular">WagSquad</span>
+      <!-- Set 2 -->
+      <span class="brand-logo brand-bold">Business Class</span>
+      <span class="brand-logo brand-regular">Bai</span>
+      <span class="brand-logo brand-bold">Payday Express</span>
+      <span class="brand-logo brand-regular">MyAsap Travels</span>
+      <span class="brand-logo brand-bold">GrabMedia</span>
+      <span class="brand-logo brand-regular">DimadCo</span>
+      <span class="brand-logo brand-bold">EYSER™</span>
+      <span class="brand-logo brand-regular">WagSquad</span>
+      <!-- Set 3 -->
+      <span class="brand-logo brand-bold">Business Class</span>
+      <span class="brand-logo brand-regular">Bai</span>
+      <span class="brand-logo brand-bold">Payday Express</span>
+      <span class="brand-logo brand-regular">MyAsap Travels</span>
+      <span class="brand-logo brand-bold">GrabMedia</span>
+      <span class="brand-logo brand-regular">DimadCo</span>
+      <span class="brand-logo brand-bold">EYSER™</span>
+      <span class="brand-logo brand-regular">WagSquad</span>
+      <!-- Set 4 -->
+      <span class="brand-logo brand-bold">Business Class</span>
+      <span class="brand-logo brand-regular">Bai</span>
+      <span class="brand-logo brand-bold">Payday Express</span>
+      <span class="brand-logo brand-regular">MyAsap Travels</span>
+      <span class="brand-logo brand-bold">GrabMedia</span>
+      <span class="brand-logo brand-regular">DimadCo</span>
+      <span class="brand-logo brand-bold">EYSER™</span>
+      <span class="brand-logo brand-regular">WagSquad</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PORTFOLIO ===== -->
+<section class="dark-bg" id="portfolio">
+  <div class="section-label">Our Work</div>
+  <h2 class="section-title reveal">Digital Portfolio</h2>
+  <p class="section-desc reveal">Real projects, real results. Explore our work across web, mobile, creative, and software.</p>
+
+  <div class="portfolio-nav reveal">
+    <button class="active" onclick="filterPortfolio('all',this)">All Projects</button>
+    <button onclick="filterPortfolio('web',this)">Web Design</button>
+    <button onclick="filterPortfolio('app',this)">App Dev</button>
+    <button onclick="filterPortfolio('creative',this)">Creative</button>
+    <button onclick="filterPortfolio('software',this)">Software</button>
+  </div>
+
+  <div class="portfolio-grid" id="portfolioGrid">
+    <!-- Items injected by JS -->
+  </div>
+</section>
+
+<!-- ===== PROCESS ===== -->
+<section id="process">
+  <div class="section-label">How We Work</div>
+  <h2 class="section-title reveal">Our Process</h2>
+  <p class="section-desc reveal">From idea to launch — a lean, transparent workflow built for speed.</p>
+
+  <div class="process-grid">
+    <div class="process-card reveal">
+      <div class="process-num">01</div>
+      <h4>Discover</h4>
+      <p>We listen to your needs, study your market, and identify the real problem worth solving.</p>
+    </div>
+    <div class="process-card reveal">
+      <div class="process-num">02</div>
+      <h4>Design</h4>
+      <p>We craft the visual direction and architecture — from wireframes to high-fidelity mockups.</p>
+    </div>
+    <div class="process-card reveal">
+      <div class="process-num">03</div>
+      <h4>Build</h4>
+      <p>Using vibe coding and modern tools, we develop rapidly — shipping working prototypes in days.</p>
+    </div>
+    <div class="process-card reveal">
+      <div class="process-num">04</div>
+      <h4>Deliver</h4>
+      <p>Launch, test, iterate. We stay on as partners — ensuring your digital presence keeps performing.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VALUES ===== -->
+<section class="dark-bg" id="values">
+  <div class="section-label">What We Stand For</div>
+  <h2 class="section-title reveal">Core Values</h2>
+  <p class="section-desc reveal">Five pillars guiding every decision, every pixel, and every line of code.</p>
+
+  <div class="values-grid">
+    <div class="value-card reveal"><div class="value-icon">🤝</div><h4>Integrity</h4><p>Honesty and professionalism in every interaction.</p></div>
+    <div class="value-card reveal"><div class="value-icon">💡</div><h4>Innovation</h4><p>Dynamic, modern solutions using the latest tools.</p></div>
+    <div class="value-card reveal"><div class="value-icon">🎯</div><h4>Commitment</h4><p>Client goals become our mission.</p></div>
+    <div class="value-card reveal"><div class="value-icon">⭐</div><h4>Excellence</h4><p>Quality, reliability, and measurable results.</p></div>
+    <div class="value-card reveal"><div class="value-icon">🌱</div><h4>Collaboration</h4><p>We grow as a team and community together.</p></div>
+  </div>
+</section>
+
+<!-- ===== FOUNDER ===== -->
+<section class="founder" id="founder">
+  <div class="section-label" style="justify-content:center">Meet the Founder</div>
+  <h2 class="section-title reveal" style="text-align:center">The Mind Behind<br><span class="gradient-text">MADINNO LABS</span></h2>
+
+  <div class="founder-content">
+    <div class="founder-card reveal">
+      <div class="founder-photo-wrap">
+        <img src="images/founder.jpg" alt="Josh Maderse — Founder of MADINNO LABS" class="founder-photo">
+      </div>
+      <h3 class="founder-name">Josh Maderse</h3>
+      <div class="founder-role">Founder & Creative Director</div>
+    </div>
+
+    <p class="founder-bio reveal">A creative professional turned software builder — Josh founded MADINNO LABS to bridge the gap between design and development for Filipino businesses. With a background in marketing strategy, video production, and graphic design, he leads the agency's mission to deliver dynamic digital solutions that help small businesses compete like the big players.</p>
+
+    <div class="founder-credentials reveal">
+      <span class="founder-cred">Marketing Strategy</span>
+      <span class="founder-cred">Creative Direction</span>
+      <span class="founder-cred">Video Production</span>
+      <span class="founder-cred">Brand Identity</span>
+      <span class="founder-cred">Software Development</span>
+      <span class="founder-cred">AI-Assisted Building</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta-section" id="contact">
+  <div class="section-label">Let's Work Together</div>
+  <h2 class="section-title reveal">Ready to Build<br><span class="gradient-text">Something Dynamic?</span></h2>
+  <p class="section-desc reveal">Whether you need a website, an app, a brand video, or a complete digital transformation — we're here to make it happen.</p>
+  <div class="hero-cta-row reveal" style="justify-content:center">
+    <a href="https://www.facebook.com/madinnolabs/" class="btn-primary" target="_blank" rel="noopener">
+      Get in Touch
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+    <a href="mailto:hello@madinnolabs.com" class="btn-secondary">hello@madinnolabs.com</a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-left">
+    <svg viewBox="0 0 100 60" fill="none"><defs><linearGradient id="fg" x1="0" y1="0" x2="100" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#FF7A45"/><stop offset="20%" stop-color="#FFD447"/><stop offset="45%" stop-color="#A6E064"/><stop offset="70%" stop-color="#2ED9C3"/><stop offset="100%" stop-color="#4DA6FF"/></linearGradient></defs><path d="M50,30 C38,8 8,8 8,30 C8,52 38,52 50,30 C62,8 92,8 92,30 C92,52 62,52 50,30" stroke="url(#fg)" stroke-width="7" stroke-linecap="round" fill="none"/></svg>
+    <span class="footer-text">© 2026 MADINNO LABS · Making Dynamic Innovation</span>
+  </div>
+  <ul class="footer-links">
+    <li><a href="https://www.facebook.com/madinnolabs/" target="_blank" rel="noopener">Facebook</a></li>
+    <li><a href="mailto:hello@madinnolabs.com">Email</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+  </ul>
+</footer>
+
+<!-- ===== MODAL ===== -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+  <div class="modal" id="modalContent" onclick="event.stopPropagation()">
+    <div class="modal-close" onclick="closeModal()">&times;</div>
+    <div class="modal-hero" id="modalHero"></div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
