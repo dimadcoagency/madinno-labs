@@ -345,7 +345,7 @@ section{padding:7rem 3rem;position:relative}
 .contact-overlay{
   position:fixed;inset:0;background:rgba(8,8,13,0.92);
   z-index:1100;display:none;align-items:center;justify-content:center;
-  backdrop-filter:blur(20px);padding:2rem;
+  padding:2rem;
 }
 .contact-overlay.open{display:flex}
 .contact-modal{
