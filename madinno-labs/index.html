@@ -335,33 +335,7 @@
       <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
     </button>
   </div>
-</section>
-
-<!-- ===== PARTNER ===== -->
-<section class="partner-section" id="partner">
-  <div class="partner-inner reveal">
-    <div class="section-label">Grow Together</div>
-    <h2 class="partner-heading">Know Someone Who Needs<br>a <span class="gradient-text">Digital Upgrade?</span></h2>
-    <p class="partner-desc">Help them find the right digital partner — and we'll make sure it's worth your while. No obligations, no complicated process. Just a simple conversation.</p>
-    <div class="partner-perks">
-      <div class="partner-perk">
-        <span class="perk-icon">✦</span>
-        <span>No obligations</span>
-      </div>
-      <div class="partner-perk">
-        <span class="perk-icon">✦</span>
-        <span>Simple process</span>
-      </div>
-      <div class="partner-perk">
-        <span class="perk-icon">✦</span>
-        <span>Rewarding partnership</span>
-      </div>
-    </div>
-    <button class="btn-primary" onclick="openContactForm('partner')">
-      Let's Talk
-      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-    </button>
-  </div>
+  <p class="partner-link reveal">Know someone who needs a digital upgrade? <button onclick="openPartnerModal()" class="partner-text-btn">Partner With Us</button></p>
 </section>
 
 <!-- ===== FOOTER ===== -->
@@ -378,6 +352,45 @@
 </footer>
 
 <!-- ===== MODAL ===== -->
+<!-- ===== PARTNER MODAL ===== -->
+<div class="contact-overlay" id="partnerOverlay" onclick="closePartnerModal(event)">
+  <div class="contact-modal" onclick="event.stopPropagation()">
+    <button class="contact-close" onclick="closePartnerModal()">&times;</button>
+    <div class="contact-header">
+      <div class="section-label" style="justify-content:flex-start;margin-bottom:0.5rem">Grow Together</div>
+      <h3>Partner With Us</h3>
+      <p>Know a business that needs a website, app, or creative content? Refer them to MADINNO LABS and we'll make it worth your while.</p>
+    </div>
+    <div class="partner-modal-perks">
+      <div class="partner-modal-perk">
+        <div class="perk-icon-box">✦</div>
+        <div>
+          <strong>No Obligations</strong>
+          <p>Refer at your own pace. No targets, no pressure — just a simple introduction.</p>
+        </div>
+      </div>
+      <div class="partner-modal-perk">
+        <div class="perk-icon-box">✦</div>
+        <div>
+          <strong>Simple Process</strong>
+          <p>You introduce the client, we handle everything else from discovery to delivery.</p>
+        </div>
+      </div>
+      <div class="partner-modal-perk">
+        <div class="perk-icon-box">✦</div>
+        <div>
+          <strong>Rewarding Partnership</strong>
+          <p>Every successful project you refer comes with a reward — discussed personally with you.</p>
+        </div>
+      </div>
+    </div>
+    <button class="contact-submit" style="margin-top:1.5rem" onclick="closePartnerModal();openContactForm('partner')">
+      Let's Talk
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </button>
+  </div>
+</div>
+
 <!-- ===== CONTACT FORM MODAL ===== -->
 <div class="contact-overlay" id="contactOverlay" onclick="closeContactForm(event)">
   <div class="contact-modal" onclick="event.stopPropagation()">

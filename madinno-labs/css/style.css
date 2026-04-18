@@ -550,6 +550,29 @@ section{padding:7rem 3rem;position:relative}
 .cta-section .section-title{max-width:700px;margin:0 auto 1.25rem}
 .cta-section .section-desc{max-width:500px;margin:0 auto 2.5rem;text-align:center}
 
+/* ===== PARTNER LINK & MODAL ===== */
+.partner-link{
+  margin-top:1.5rem;font-size:0.88rem;color:var(--text-4);text-align:center;
+}
+.partner-text-btn{
+  background:none;border:none;color:var(--teal);font-size:0.88rem;
+  font-family:'DM Sans',sans-serif;cursor:pointer;text-decoration:underline;
+  text-underline-offset:3px;transition:opacity 0.2s;padding:0;
+}
+.partner-text-btn:hover{opacity:0.75}
+.partner-modal-perks{display:flex;flex-direction:column;gap:1.25rem;margin-top:0.5rem}
+.partner-modal-perk{display:flex;gap:1rem;align-items:flex-start}
+.perk-icon-box{
+  color:var(--teal);font-size:0.9rem;margin-top:0.2rem;
+  flex-shrink:0;width:20px;text-align:center;
+}
+.partner-modal-perk strong{
+  display:block;color:var(--text-1);font-size:0.92rem;margin-bottom:0.2rem;
+}
+.partner-modal-perk p{
+  color:var(--text-3);font-size:0.84rem;line-height:1.6;margin:0;
+}
+
 /* ===== PARTNER SECTION ===== */
 .partner-section{
   padding:7rem 3rem;background:var(--dark-2);

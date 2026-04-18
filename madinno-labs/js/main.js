@@ -128,6 +128,17 @@ function closeModal(e){
 
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
 
+// ===== Partner Modal =====
+function openPartnerModal(){
+  document.getElementById('partnerOverlay').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closePartnerModal(e){
+  if(e && e.target!==document.getElementById('partnerOverlay')) return;
+  document.getElementById('partnerOverlay').classList.remove('open');
+  document.body.style.overflow='';
+}
+
 // ===== Contact Form =====
 function openContactForm(type){
   document.getElementById('contactOverlay').classList.add('open');
