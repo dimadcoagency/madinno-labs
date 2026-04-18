@@ -128,6 +128,46 @@ function closeModal(e){
 
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
 
+// ===== Contact Form =====
+function openContactForm(){
+  document.getElementById('contactOverlay').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeContactForm(e){
+  if(e && e.target!==document.getElementById('contactOverlay')) return;
+  document.getElementById('contactOverlay').classList.remove('open');
+  document.body.style.overflow='';
+}
+async function submitContactForm(e){
+  e.preventDefault();
+  const btn = document.getElementById('contactSubmitBtn');
+  const success = document.getElementById('contactSuccess');
+  const error = document.getElementById('contactError');
+  btn.disabled=true;
+  btn.textContent='Sending...';
+  success.classList.remove('show');
+  error.classList.remove('show');
+  const formData = new FormData(e.target);
+  try{
+    const res = await fetch('https://api.web3forms.com/submit',{method:'POST',body:formData});
+    const data = await res.json();
+    if(data.success){
+      success.classList.add('show');
+      e.target.reset();
+      setTimeout(()=>{
+        closeContactForm();
+        success.classList.remove('show');
+      },3000);
+    } else {
+      error.classList.add('show');
+    }
+  } catch(err){
+    error.classList.add('show');
+  }
+  btn.disabled=false;
+  btn.innerHTML='Send Message <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>';
+}
+
 // ===== Nav Scroll =====
 let lastScroll = 0;
 window.addEventListener('scroll',()=>{

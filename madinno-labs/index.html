@@ -330,10 +330,10 @@
   <h2 class="section-title reveal">Ready to Build<br><span class="gradient-text">Something Dynamic?</span></h2>
   <p class="section-desc reveal">Whether you need a website, an app, a brand video, or a complete digital transformation — we're here to make it happen.</p>
   <div class="hero-cta-row reveal" style="justify-content:center">
-    <a href="https://www.facebook.com/madinnolabs/" class="btn-primary" target="_blank" rel="noopener">
+    <button class="btn-primary" onclick="openContactForm()">
       Get in Touch
       <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-    </a>
+    </button>
   </div>
 </section>
 
@@ -351,6 +351,63 @@
 </footer>
 
 <!-- ===== MODAL ===== -->
+<!-- ===== CONTACT FORM MODAL ===== -->
+<div class="contact-overlay" id="contactOverlay" onclick="closeContactForm(event)">
+  <div class="contact-modal" onclick="event.stopPropagation()">
+    <button class="contact-close" onclick="closeContactForm()">&times;</button>
+    <div class="contact-header">
+      <div class="section-label" style="justify-content:flex-start;margin-bottom:0.5rem">Let's Work Together</div>
+      <h3>Send Us a Message</h3>
+      <p>Fill in the details below and we'll get back to you shortly.</p>
+    </div>
+    <form id="contactForm" onsubmit="submitContactForm(event)">
+      <input type="hidden" name="access_key" value="dc8cdb0e-8191-4408-a64f-dce6047e0eae">
+      <input type="hidden" name="subject" value="New Inquiry — MADINNO LABS">
+      <input type="hidden" name="from_name" value="MADINNO LABS Website">
+      <div class="contact-field">
+        <label>Client Name <span>*</span></label>
+        <input type="text" name="name" placeholder="Your full name" required>
+      </div>
+      <div class="contact-field">
+        <label>Company Name</label>
+        <input type="text" name="company" placeholder="Your company (optional)">
+      </div>
+      <div class="contact-field">
+        <label>Email Address <span>*</span></label>
+        <input type="email" name="email" placeholder="your@email.com" required>
+      </div>
+      <div class="contact-field">
+        <label>Service Interested In</label>
+        <select name="service">
+          <option value="" disabled selected>Select a service...</option>
+          <option>Website Design & Development</option>
+          <option>App Development</option>
+          <option>Custom Software</option>
+          <option>Video Editing</option>
+          <option>Social Media Graphics</option>
+          <option>AI-Powered Solutions</option>
+          <option>Full Package</option>
+        </select>
+      </div>
+      <div class="contact-field">
+        <label>Message <span>*</span></label>
+        <textarea name="message" placeholder="Tell us about your project..." rows="4" required></textarea>
+      </div>
+      <button type="submit" class="contact-submit" id="contactSubmitBtn">
+        Send Message
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+      <div class="contact-success" id="contactSuccess">
+        <svg width="24" height="24" fill="none" stroke="var(--lime)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+        Message sent! We'll get back to you soon.
+      </div>
+      <div class="contact-error" id="contactError">
+        Something went wrong. Please try again.
+      </div>
+    </form>
+  </div>
+</div>
+
 <div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
   <div class="modal" id="modalContent" onclick="event.stopPropagation()">
     <div class="modal-close" onclick="closeModal()">&times;</div>
