@@ -550,6 +550,36 @@ section{padding:7rem 3rem;position:relative}
 .cta-section .section-title{max-width:700px;margin:0 auto 1.25rem}
 .cta-section .section-desc{max-width:500px;margin:0 auto 2.5rem;text-align:center}
 
+/* ===== PARTNER SECTION ===== */
+.partner-section{
+  padding:7rem 3rem;background:var(--dark-2);
+  border-top:1px solid var(--dark-5);
+}
+.partner-inner{
+  max-width:600px;margin:0 auto;text-align:center;
+}
+.partner-heading{
+  font-family:'Syne',sans-serif;font-size:clamp(1.8rem,4vw,2.8rem);
+  font-weight:800;line-height:1.15;margin:0.75rem 0 1.25rem;color:var(--text-1);
+}
+.partner-desc{
+  font-size:1rem;color:var(--text-3);line-height:1.7;
+  max-width:480px;margin:0 auto 2rem;
+}
+.partner-perks{
+  display:flex;justify-content:center;gap:2rem;
+  flex-wrap:wrap;margin-bottom:2.5rem;
+}
+.partner-perk{
+  display:flex;align-items:center;gap:0.5rem;
+  font-size:0.88rem;font-weight:500;color:var(--text-2);
+}
+.perk-icon{color:var(--teal);font-size:0.75rem}
+@media(max-width:768px){
+  .partner-section{padding:5rem 1.5rem}
+  .partner-perks{gap:1.25rem}
+}
+
 /* ===== FOOTER ===== */
 footer{
   padding:4rem 3rem;border-top:1px solid var(--dark-5);

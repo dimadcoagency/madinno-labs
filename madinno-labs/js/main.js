@@ -129,9 +129,15 @@ function closeModal(e){
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
 
 // ===== Contact Form =====
-function openContactForm(){
+function openContactForm(type){
   document.getElementById('contactOverlay').classList.add('open');
   document.body.style.overflow='hidden';
+  const select = document.querySelector('#contactForm select[name="service"]');
+  if(type==='partner'){
+    select.value='Partner / Referral Program';
+  } else {
+    select.value='';
+  }
 }
 function closeContactForm(e){
   if(e && e.target!==document.getElementById('contactOverlay')) return;
