@@ -84,7 +84,7 @@ In `js/main.js`, add a new object to the `projects` array:
 ## Contact
 
 - **Email**: hello@madinnolabs.com
-- **Facebook**: [facebook.com/dimadcreatives](https://facebook.com/dimadcreatives)
+- **Facebook**: [facebook.com/madinnolabstech](https://www.facebook.com/madinnolabstech)
 - **Website**: [madinnolabs.com](https://madinnolabs.com)
 
 ---
